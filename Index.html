@@ -19,44 +19,44 @@
             <h3>If</h3>
             <p>Simple if clause with Ambience: 
             <pre><code>
-                init cond1 = 2
-                init cond2 = 4
-                
-                if (cond1 < cond2) {
-                    out("{$} is more then {$}", cond2, cond1)
-                }           
+init cond1 = 2
+init cond2 = 4
+
+if (cond1 < cond2) {
+    out("{$} is more then {$}", cond2, cond1)
+}           
             </code></pre>
             </p>
         </div>
         <div class="syntax-block">
             <h3>While</h3>
-            <p>Simple if clause with Ambience: 
+            <p>Simple While Loop with Ambience: 
                 <pre><code>
-                    init cond1 = true;
-                    init loopcount = 0;
+init cond1 = true;
+init loopcount = 0;
 
-                    while (cond1 == true) {
-                        loopcount += 1;
-                    }
-
-
-
-                    //Progressed While Loop with Ambience
+while (cond1 == true) {
+    loopcount += 1;
+}
 
 
-                    init cond1 = true;
-                    init loopcount = 0;
 
-                    while (cond1 == true) {
-                        loopcount += 1;
-                        while (loopcount > 5){
-                            out!("Already looped more then {$} times", loopcount); // newline
-                            out("Already looped more then {$} times", loopcount); // not newline
-                        }
-                        if (loopcount !< 20) { // if loopcount is not smaller then 20
-                            cond1 = false;
-                        }
-                    }
+//Progressed While Loop with Ambience
+
+
+init cond1 = true;
+init loopcount = 0;
+
+while (cond1 == true) {
+    loopcount += 1;
+    while (loopcount > 5){
+        out!("Already looped more then {$} times", loopcount); // newline
+        out("Already looped more then {$} times", loopcount); // not newline
+    }
+    if (loopcount !< 20) { // if loopcount is not smaller then 20
+        cond1 = false;
+    }
+}
                     </code></pre>
                 </p>
         </div>
